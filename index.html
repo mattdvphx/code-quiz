@@ -1,29 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="./styles.css" />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="startScreen">
-      <h1>codequizhomework</h1>
-      <p>try to answer the following questions:</p>
-      <button id="startButton">Start Quiz</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+     <title>JavaScript Code Quiz</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row header">
+            
+            </div>
+            <div class="col-6 text-center">
+                
+                </h2>
+            </div>
+            <div class="col-3">
+                <h3 id="time">
+
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 spacer">
+
+            </div>
+        </div>
     </div>
 
-    <div id="questionsDisplay">
-      <h2 id="questionTitle">Question1</h2>
-      <div id="choices"></div>
+
+
+    <!-- Start Section -->
+    <div id="start-screen">
+        <div class="container text-center">
+        <div class="row">
+            <div class="col-12">
+                <div class="screen start-screen text-center">
+                    <div class="row">
+                        <div class="col-12">
+                            
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-6">
+                            <button type="button" id="start-btn" class="btn btn-primary start-btn">Start Game</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
     </div>
 
-    <div id="endScreen">
-      <h2>AllDone</h2>
-      <p>YourFinalScore</p>
+
+    <!-- Screen Section -->
+
+    <div id="quiz-screen" class="hide">
+        <div class="container screen">
+            <div class="row">
+                <div class="col-12 text-center mx-0">
+                    <h1 id="question-el">
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="options col-12 text-center">
+                    <h1 id="answerA-el"></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="options col-12 text-center">
+                    <h1 id="answerB-el"></h1>
+                
+
+        <!-- response -->
+        <div class="container answer-section w-100 text-center">
+            <div class="row">
+                <div class="col-12 spacer answer-spacer">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <button id="a" class="ansr-btns nuetral" type="button">A </n></button>
+                </div>
+
+                <div class="col-6">
+                    <button id="b" class="ansr-btns nuetral" type="button">B</button>
+                </div>
+            </div>
+
+            
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 spacer">
+
+                </div>
+            </div>
+            <div class="row bottom ">
+                <div class="col-12 text-center footer">
+                   
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <div id="score-screen" class="hide">
+        <div class="container screen text-center h-100">
+            <div class="score-content">
+                <div class="row">
+                    <div class="col-12 m-auto">
+                        <h1 id="score-label">Your Score</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 m-auto">
+                        <h3 id="score"></h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 m-auto">
+                        <h1>Initials:</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 m-auto">
+                        <form id="form">
+                            <input id="initials" type="text" placeholder="type initials">
+                            <input id="submit-btn" type="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container leaderboard">
+        <div class="row">
+            <div class="col-12">
+                <div class="screen text-center">
+                
+                    <div id="scores">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <script src="./script.js"></script>
-  </body>
+</body>
+
 </html>
